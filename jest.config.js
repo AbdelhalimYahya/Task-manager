@@ -1,9 +1,16 @@
 export default {
   testEnvironment: 'node',
-  coveragePathIgnorePatterns: ['/node_modules/'],
   testMatch: ['**/test/**/*.test.js'],
   verbose: true,
   forceExit: true,
-  testTimeout: 10000,
-  transform: {}
+  testTimeout: 30000,
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
+  transform: {},
+  collectCoverageFrom: [
+    'src/**/*.js',
+    '!src/test/**',
+    '!src/index.js'
+  ]
 };

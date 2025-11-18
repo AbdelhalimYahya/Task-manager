@@ -1,17 +1,39 @@
 import request from 'supertest';
 import express from 'express';
 import cookieParser from 'cookie-parser';
+import bcrypt from 'bcryptjs';
+import mongoose from 'mongoose';
+import { MongoMemoryServer } from 'mongodb-memory-server';
+
+// Set JWT_SECRET before importing anything
+process.env.JWT_SECRET = 'test-secret-key';
+
+let mongoServer;
+
+// Start MongoDB Memory Server before all tests
+beforeAll(async () => {
+  mongoServer = await MongoMemoryServer.create();
+  const mongoUri = mongoServer.getUri();
+  await mongoose.connect(mongoUri);
+});
+
+// Disconnect after all tests
+afterAll(async () => {
+  await mongoose.disconnect();
+  await mongoServer.stop();
+});
+
+// Clear collections after each test
+afterEach(async () => {
+  const collections = mongoose.connection.collections;
+  for (const key in collections) {
+    await collections[key].deleteMany();
+  }
+});
+
+// Import after mongoose setup
 import authRoutes from '../router/auth.route.js';
 import User from '../models/user.model.js';
-import bcrypt from 'bcryptjs';
-
-// Mock dependencies
-jest.mock('../models/user.model.js');
-jest.mock('../libs/generateToken.js', () => ({
-  generateToken: jest.fn((id, res) => {
-    res.cookie('token', 'mock-jwt-token');
-  })
-}));
 
 // Create test app
 const app = express();
@@ -19,27 +41,12 @@ app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET || 'test-secret'));
 app.use('/api/auth', authRoutes);
 
-describe('Auth Routes Tests', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
-
+describe('Auth Routes Tests with Real Database', () => {
+  
   // ============ SIGNUP TESTS ============
   describe('POST /api/auth/signup', () => {
     
     it('should successfully register a new user', async () => {
-      const newUser = {
-        _id: '507f1f77bcf86cd799439011',
-        name: 'John Doe',
-        email: 'john@example.com',
-        password: 'hashedpassword123',
-        role: 'user',
-        save: jest.fn().mockResolvedValue(null)
-      };
-
-      User.findOne.mockResolvedValue(null);
-      User.create.mockResolvedValue(newUser);
-
       const response = await request(app)
         .post('/api/auth/signup')
         .send({
@@ -53,6 +60,12 @@ describe('Auth Routes Tests', () => {
       expect(response.body).toHaveProperty('_id');
       expect(response.body.name).toBe('John Doe');
       expect(response.body.email).toBe('john@example.com');
+      expect(response.body.role).toBe('user');
+      
+      // Verify user was saved to database
+      const savedUser = await User.findOne({ email: 'john@example.com' });
+      expect(savedUser).toBeDefined();
+      expect(savedUser.name).toBe('John Doe');
     });
 
     it('should return 400 for invalid email format', async () => {
@@ -71,13 +84,15 @@ describe('Auth Routes Tests', () => {
     });
 
     it('should return 400 if email already exists', async () => {
-      const existingUser = {
+      // First, create a user
+      await User.create({
+        name: 'Existing User',
         email: 'john@example.com',
-        name: 'Existing User'
-      };
+        password: await bcrypt.hash('password123', 10),
+        role: 'user'
+      });
 
-      User.findOne.mockResolvedValue(existingUser);
-
+      // Try to create user with same email
       const response = await request(app)
         .post('/api/auth/signup')
         .send({
@@ -92,8 +107,6 @@ describe('Auth Routes Tests', () => {
     });
 
     it('should return 400 for password less than 6 characters', async () => {
-      User.findOne.mockResolvedValue(null);
-
       const response = await request(app)
         .post('/api/auth/signup')
         .send({
@@ -112,17 +125,16 @@ describe('Auth Routes Tests', () => {
   describe('POST /api/auth/login', () => {
     
     it('should successfully login with correct credentials', async () => {
+      // Create a test user
       const hashedPassword = await bcrypt.hash('password123', 10);
-      const user = {
-        _id: '507f1f77bcf86cd799439011',
+      await User.create({
         name: 'John Doe',
         email: 'john@example.com',
         password: hashedPassword,
         role: 'user'
-      };
+      });
 
-      User.findOne.mockResolvedValue(user);
-
+      // Login with correct credentials
       const response = await request(app)
         .post('/api/auth/login')
         .send({
@@ -133,11 +145,11 @@ describe('Auth Routes Tests', () => {
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty('_id');
       expect(response.body.email).toBe('john@example.com');
+      expect(response.body.name).toBe('John Doe');
+      expect(response.body.role).toBe('user');
     });
 
     it('should return 404 if user not found', async () => {
-      User.findOne.mockResolvedValue(null);
-
       const response = await request(app)
         .post('/api/auth/login')
         .send({
@@ -150,17 +162,16 @@ describe('Auth Routes Tests', () => {
     });
 
     it('should return 400 for incorrect password', async () => {
+      // Create a test user
       const hashedPassword = await bcrypt.hash('correctpassword', 10);
-      const user = {
-        _id: '507f1f77bcf86cd799439011',
+      await User.create({
         name: 'John Doe',
         email: 'john@example.com',
         password: hashedPassword,
         role: 'user'
-      };
+      });
 
-      User.findOne.mockResolvedValue(user);
-
+      // Try to login with wrong password
       const response = await request(app)
         .post('/api/auth/login')
         .send({
