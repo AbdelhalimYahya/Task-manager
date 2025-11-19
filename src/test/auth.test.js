@@ -73,14 +73,14 @@ describe('Auth Routes Tests with Real Database', () => {
         .post('/api/auth/signup')
         .send({
           name: 'John Doe',
-          email: 'invalid-email',
+          email: 'invalid-emai23',
           password: 'password123',
           role: 'user'
         });
 
       expect(response.status).toBe(400);
       expect(response.body).toHaveProperty('error');
-      expect(response.body.error).toContain('Invalid email format');
+      expect(response.body.error).toContain('Email must be valid');
     });
 
     it('should return 400 if email already exists', async () => {

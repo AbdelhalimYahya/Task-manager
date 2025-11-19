@@ -1,0 +1,84 @@
+@startuml Task Management API
+
+title Task Management API - System Architecture
+
+package "Database Models" {
+  object User {
+    _id
+    name
+    email
+    password
+    role
+    createdAt
+  }
+  
+  object Task {
+    _id
+    title
+    description
+    dueDate
+    status
+    priority
+    user
+    createdAt
+  }
+}
+
+package "Middleware Stack" {
+  object Helmet
+  object CORS
+  object CookieParser
+  object RequestLogger
+  object ProtectRoute
+  object RoleRoute
+}
+
+package "API Routes" {
+  object AuthRoutes
+  object TaskRoutes
+}
+
+package "Controllers" {
+  object AuthController
+  object TaskController
+}
+
+package "Validation" {
+  object AuthValidation
+  object TaskValidation
+}
+
+package "Security" {
+  object Bcryptjs
+  object JWT
+}
+
+package "Utilities" {
+  object Logger
+  object TokenGenerator
+  object Paginator
+  object MongoDBConnection
+}
+
+package "Documentation" {
+  object SwaggerAPI
+}
+
+AuthRoutes --> AuthController
+TaskRoutes --> TaskController
+
+AuthController --> Bcryptjs
+AuthController --> JWT
+AuthController --> Logger
+AuthController --> TokenGenerator
+
+TaskController --> Logger
+TaskController --> Paginator
+
+AuthRoutes --> AuthValidation
+TaskRoutes --> TaskValidation
+
+ProtectRoute --> JWT
+RoleRoute --> JWT
+
+@enduml

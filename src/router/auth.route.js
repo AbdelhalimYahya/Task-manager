@@ -1,5 +1,6 @@
 import express from "express";
 import { signup, login, logout } from "../controller/auth.controller.js";
+import { validateSignup, validateLogin } from "../validation/auth.validation.js";
 
 const router = express.Router();
 
@@ -46,7 +47,7 @@ const router = express.Router();
  *       500:
  *         $ref: '#/components/responses/ServerError'
  */
-router.post("/signup", signup);
+router.post("/signup", validateSignup, signup);
 
 /**
  * @swagger
@@ -99,7 +100,7 @@ router.post("/signup", signup);
  *       500:
  *         $ref: '#/components/responses/ServerError'
  */
-router.post("/login", login);
+router.post("/login", validateLogin, login);
 
 /**
  * @swagger

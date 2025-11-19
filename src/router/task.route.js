@@ -2,6 +2,7 @@ import express from "express";
 import { getAllUsersTasks , getTaskByUser, createTask, updateTask, deleteTask } from "../controller/task.controller.js";
 import { protectRoute } from "../middleware/protectRoute.js";
 import { roleRoute } from "../middleware/roleRoute.js";
+import { validateCreateTask, validateUpdateTask } from "../validation/task.validation.js";
 
 const router = express.Router();
 
@@ -112,7 +113,7 @@ router.get("/:id",protectRoute, getTaskByUser); // get all the tasks related to 
  *       500:
  *         $ref: '#/components/responses/ServerError'
  */
-router.post("/create",protectRoute, createTask);
+router.post("/create",protectRoute, validateCreateTask, createTask);
 
 /**
  * @swagger
@@ -164,7 +165,7 @@ router.post("/create",protectRoute, createTask);
  *       500:
  *         $ref: '#/components/responses/ServerError'
  */
-router.patch("/:id",protectRoute, updateTask);
+router.patch("/:id",protectRoute, validateUpdateTask, updateTask);
 
 /**
  * @swagger

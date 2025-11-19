@@ -11,8 +11,6 @@ import taskRoutes from "./router/task.route.js";
 import swaggerUi from "swagger-ui-express";
 import swaggerSpec from "./configuration/swagger.config.js";
 
-
-
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;

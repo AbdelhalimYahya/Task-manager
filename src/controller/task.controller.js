@@ -167,7 +167,6 @@ export const updateTask = async (req, res) => {
       return res.status(404).json({ message: "Task not found" });
     }
 
-    // Check if user owns the task or is admin
     if (task.user.toString() !== userId.toString() && req.user.role !== "admin") {
       logger.warn("Unauthorized task update attempt", {
         taskId: id,
@@ -177,7 +176,6 @@ export const updateTask = async (req, res) => {
       return res.status(403).json({ message: "Forbidden - You don't have access to update this task" });
     }
 
-    // Update task
     if (title) task.title = title;
     if (description) task.description = description;
     if (dueDate) task.dueDate = dueDate;
@@ -223,7 +221,6 @@ export const deleteTask = async (req, res) => {
       return res.status(404).json({ message: "Task not found" });
     }
 
-    // Check if user owns the task or is admin
     if (task.user.toString() !== userId.toString() && req.user.role !== "admin") {
       logger.warn("Unauthorized task deletion attempt", {
         taskId: id,

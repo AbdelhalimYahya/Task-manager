@@ -415,3 +415,156 @@
 {"email":"abdelhalim@gmail.con","ip":"::1","level":"info","message":"Signup attempt initiated","name":"abdelhalim","service":"api-gateway","timestamp":"2025-11-19T09:11:05.107Z","userAgent":"PostmanRuntime/7.49.1"}
 {"email":"abdelhalim@gmail.con","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T09:11:05.170Z","userId":"691cdbb3067695dd7c4585be"}
 {"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:11:13.069Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:14:05.005Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:15:41.069Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:16:36.644Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:16:50.464Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:27:48.393Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:27:59.879Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:06.747Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:10.881Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:15.267Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:20.199Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:25.691Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:30.473Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:38.959Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:43.143Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:47.643Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:28:52.574Z"}
+{"level":"info","message":"Received POST request to /api/auth/signup","service":"api-gateway","timestamp":"2025-11-19T09:29:24.065Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:29:24.066Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"api-gateway","timestamp":"2025-11-19T09:29:34.356Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:29:34.357Z"}
+{"level":"info","message":"Received POST request to /api/auth/logout","service":"api-gateway","timestamp":"2025-11-19T09:29:38.493Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:29:38.494Z"}
+{"email":"ali@gmail.con","ip":"::1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T09:29:38.569Z","userId":"691bd383c2dbd92d33ba86db"}
+{"email":"ali@gmail.con","level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T09:29:38.570Z","userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"api-gateway","timestamp":"2025-11-19T09:29:42.072Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:29:42.073Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:29:53.815Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:31:19.291Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:31:25.552Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:31:34.042Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:31:39.405Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:31:46.062Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:31:55.289Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:32:01.290Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:32:06.905Z"}
+{"level":"info","message":"Received POST request to /api/auth/logout","service":"api-gateway","timestamp":"2025-11-19T09:32:35.115Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:32:35.116Z"}
+{"ip":"::1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T09:32:35.118Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T09:32:35.119Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"api-gateway","timestamp":"2025-11-19T09:32:38.931Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:32:38.931Z"}
+{"level":"info","message":"Received POST request to /api/auth/signup","service":"api-gateway","timestamp":"2025-11-19T09:33:29.584Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:33:29.584Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"api-gateway","timestamp":"2025-11-19T09:36:30.400Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:36:30.400Z"}
+{"email":"ali@gmail.com","ip":"::1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T09:36:30.401Z","userAgent":"PostmanRuntime/7.49.1"}
+{"email":"ali@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-19T09:36:30.548Z","userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received POST request to /api/auth/signup","service":"api-gateway","timestamp":"2025-11-19T09:36:37.339Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:36:37.340Z"}
+{"level":"info","message":"Received POST request to /api/auth/signup","service":"api-gateway","timestamp":"2025-11-19T09:36:44.389Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:36:44.389Z"}
+{"email":"abdelhalim@gmail.com","ip":"::1","level":"info","message":"Signup attempt initiated","name":"abdelhalim","service":"api-gateway","timestamp":"2025-11-19T09:36:44.390Z","userAgent":"PostmanRuntime/7.49.1"}
+{"email":"abdelhalim@gmail.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T09:36:44.451Z","userId":"691cdbb3067695dd7c4585be"}
+{"level":"info","message":"Received GET request to /api/tasks/dashboard","service":"api-gateway","timestamp":"2025-11-19T09:37:02.736Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-11-19T09:37:02.737Z"}
+{"level":"info","message":"Received GET request to /api/tasks/691bd383c2dbd92d33ba86db","service":"api-gateway","timestamp":"2025-11-19T09:37:07.206Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-11-19T09:37:07.207Z"}
+{"currentUserId":"691bd383c2dbd92d33ba86db","filters":{"search":null,"status":null},"level":"info","limit":10,"message":"Tasks retrieved for user with pagination","page":1,"service":"api-gateway","taskCount":1,"timestamp":"2025-11-19T09:37:07.466Z","total":1,"userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received POST request to /api/tasks/create","service":"api-gateway","timestamp":"2025-11-19T09:37:24.993Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:37:24.993Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:38:39.024Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:38:46.071Z"}
+{"level":"info","message":"Received POST request to /api/tasks/create","service":"api-gateway","timestamp":"2025-11-19T09:38:51.508Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:38:51.508Z"}
+{"level":"info","message":"Task created successfully","service":"api-gateway","task":{"__v":0,"_id":"691d902b83272a31b5fe63f5","createdAt":"2025-11-19T09:38:51.585Z","description":"description test before the deployment","dueDate":"2025-03-14T22:00:00.000Z","id":"691d902b83272a31b5fe63f5","status":"pending","title":"title test delete","user":{"_id":"691bd383c2dbd92d33ba86db","email":"ali@gmail.com","role":"user"}},"taskId":"691d902b83272a31b5fe63f5","taskTitle":"title test delete","timestamp":"2025-11-19T09:38:51.728Z","user":{"__v":0,"_id":"691bd383c2dbd92d33ba86db","createdAt":"2025-11-18T02:01:39.420Z","email":"ali@gmail.com","name":"ali","role":"user"},"userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received PATCH request to /api/tasks/691ce3b25a3c3202c638e004","service":"api-gateway","timestamp":"2025-11-19T09:39:07.210Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:39:07.211Z"}
+{"level":"info","message":"Task updated successfully","service":"api-gateway","taskId":"691ce3b25a3c3202c638e004","timestamp":"2025-11-19T09:39:07.483Z","updatedFields":{"title":"update title only due to patch then the shema joi"},"userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received POST request to /api/tasks/create","service":"api-gateway","timestamp":"2025-11-19T09:39:30.419Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-19T09:39:30.419Z"}
+{"level":"info","message":"Task created successfully","service":"api-gateway","task":{"__v":0,"_id":"691d905283272a31b5fe63fd","createdAt":"2025-11-19T09:39:30.485Z","description":"description test before the deployment","dueDate":"2025-03-14T22:00:00.000Z","id":"691d905283272a31b5fe63fd","status":"pending","title":"titasfdasdfasdfasdfasf","user":{"_id":"691bd383c2dbd92d33ba86db","email":"ali@gmail.com","role":"user"}},"taskId":"691d905283272a31b5fe63fd","taskTitle":"titasfdasdfasdfasdfasf","timestamp":"2025-11-19T09:39:30.617Z","user":{"__v":0,"_id":"691bd383c2dbd92d33ba86db","createdAt":"2025-11-18T02:01:39.420Z","email":"ali@gmail.com","name":"ali","role":"user"},"userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received DELETE request to /api/tasks/691d905283272a31b5fe63fd","service":"api-gateway","timestamp":"2025-11-19T09:39:41.182Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-11-19T09:39:41.182Z"}
+{"level":"info","message":"Task deleted successfully","service":"api-gateway","taskId":"691d905283272a31b5fe63fd","taskTitle":"titasfdasdfasdfasdfasf","timestamp":"2025-11-19T09:39:41.378Z","userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T09:39:49.711Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:00:31.119Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:00:41.572Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:00:49.713Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:01:32.293Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:01:36.973Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:01:39.369Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:04:53.098Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:05:04.960Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:05:11.099Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:05:21.463Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:07:36.981Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:11:46.015Z"}
+{"email":"john@example.com","level":"info","message":"User registered successfully","name":"John Doe","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:11:46.132Z","userId":"691d97e2207f48866d4a3592"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:11:46.229Z"}
+{"email":"john@example.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T10:11:46.232Z","userId":"691d97e2207f48866d4a3598"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:11:46.315Z"}
+{"email":"john@example.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:11:46.385Z","userId":"691d97e2207f48866d4a359d"}
+{"email":"nonexistent@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:11:46.393Z"}
+{"email":"nonexistent@example.com","level":"warn","message":"Login failed: User not found","service":"api-gateway","timestamp":"2025-11-19T10:11:46.395Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:11:46.472Z"}
+{"email":"john@example.com","level":"warn","message":"Login failed: Invalid password","service":"api-gateway","timestamp":"2025-11-19T10:11:46.541Z","userId":"691d97e2207f48866d4a35a3"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T10:11:46.549Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T10:11:46.549Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:28:50.794Z"}
+{"email":"john@example.com","level":"info","message":"User registered successfully","name":"John Doe","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:28:50.903Z","userId":"691d9be27022abcd33bc7fba"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:28:50.996Z"}
+{"email":"john@example.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T10:28:50.999Z","userId":"691d9be27022abcd33bc7fc0"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:28:51.088Z"}
+{"email":"john@example.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:28:51.157Z","userId":"691d9be37022abcd33bc7fc5"}
+{"email":"nonexistent@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:28:51.164Z"}
+{"email":"nonexistent@example.com","level":"warn","message":"Login failed: User not found","service":"api-gateway","timestamp":"2025-11-19T10:28:51.167Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:28:51.240Z"}
+{"email":"john@example.com","level":"warn","message":"Login failed: Invalid password","service":"api-gateway","timestamp":"2025-11-19T10:28:51.308Z","userId":"691d9be37022abcd33bc7fcb"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T10:28:51.319Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T10:28:51.320Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:29:28.279Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:29:34.557Z"}
+{"email":"john@example.com","level":"info","message":"User registered successfully","name":"John Doe","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:29:34.666Z","userId":"691d9c0ec7007565e66ed4af"}
+{"email":"invalid-email@gmail.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:29:34.688Z"}
+{"email":"invalid-email@gmail.com","level":"info","message":"User registered successfully","name":"John Doe","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:29:34.763Z","userId":"691d9c0ec7007565e66ed4b5"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:29:34.841Z"}
+{"email":"john@example.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T10:29:34.844Z","userId":"691d9c0ec7007565e66ed4b9"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:29:34.926Z"}
+{"email":"john@example.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:29:34.997Z","userId":"691d9c0ec7007565e66ed4be"}
+{"email":"nonexistent@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:29:35.006Z"}
+{"email":"nonexistent@example.com","level":"warn","message":"Login failed: User not found","service":"api-gateway","timestamp":"2025-11-19T10:29:35.009Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:29:35.086Z"}
+{"email":"john@example.com","level":"warn","message":"Login failed: Invalid password","service":"api-gateway","timestamp":"2025-11-19T10:29:35.154Z","userId":"691d9c0fc7007565e66ed4c4"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T10:29:35.161Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T10:29:35.162Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:30:01.942Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:30:18.414Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:30:23.899Z"}
+{"email":"john@example.com","level":"info","message":"User registered successfully","name":"John Doe","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:30:24.018Z","userId":"691d9c401a3b7696739ffd8e"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:30:24.115Z"}
+{"email":"john@example.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T10:30:24.118Z","userId":"691d9c401a3b7696739ffd94"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:30:24.202Z"}
+{"email":"john@example.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:30:24.273Z","userId":"691d9c401a3b7696739ffd99"}
+{"email":"nonexistent@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:30:24.281Z"}
+{"email":"nonexistent@example.com","level":"warn","message":"Login failed: User not found","service":"api-gateway","timestamp":"2025-11-19T10:30:24.283Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:30:24.361Z"}
+{"email":"john@example.com","level":"warn","message":"Login failed: Invalid password","service":"api-gateway","timestamp":"2025-11-19T10:30:24.430Z","userId":"691d9c401a3b7696739ffd9f"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T10:30:24.438Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T10:30:24.439Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:32:13.749Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:32:25.991Z"}
+{"email":"john@example.com","level":"info","message":"User registered successfully","name":"John Doe","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:32:26.102Z","userId":"691d9cba4f68e95295812511"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Signup attempt initiated","name":"John Doe","service":"api-gateway","timestamp":"2025-11-19T10:32:26.193Z"}
+{"email":"john@example.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-19T10:32:26.197Z","userId":"691d9cba4f68e95295812517"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:32:26.279Z"}
+{"email":"john@example.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-19T10:32:26.348Z","userId":"691d9cba4f68e9529581251c"}
+{"email":"nonexistent@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:32:26.355Z"}
+{"email":"nonexistent@example.com","level":"warn","message":"Login failed: User not found","service":"api-gateway","timestamp":"2025-11-19T10:32:26.358Z"}
+{"email":"john@example.com","ip":"::ffff:127.0.0.1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-19T10:32:26.431Z"}
+{"email":"john@example.com","level":"warn","message":"Login failed: Invalid password","service":"api-gateway","timestamp":"2025-11-19T10:32:26.498Z","userId":"691d9cba4f68e95295812522"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-19T10:32:26.505Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-19T10:32:26.506Z"}
+{"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-19T10:32:32.199Z"}

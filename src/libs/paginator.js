@@ -9,18 +9,17 @@ export const paginate = (req) => {
   const validPage = page > 0 ? page : 1;
   const validLimit = limit > 0 && limit <= 100 ? limit : 10;
 
-  // Calculate skip for pagination
+  // skip for 
   const skip = (validPage - 1) * validLimit;
 
-  // Build filter object
+  // filter config part
   const filter = {};
 
-  // Add status filter if provided
   if (status) {
     filter.status = status.toLowerCase();
   }
 
-  // Add search filter if provided (searches in title and description)
+  // Add search filter
   if (search) {
     filter.$or = [
       { title: { $regex: search, $options: 'i' } },
