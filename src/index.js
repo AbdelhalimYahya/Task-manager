@@ -8,6 +8,10 @@ import helmet from "helmet";
 import logger from "./libs/logger.js";
 import authRoutes from "./router/auth.route.js";
 import taskRoutes from "./router/task.route.js";
+import swaggerUi from "swagger-ui-express";
+import swaggerSpec from "./configuration/swagger.config.js";
+
+
 
 dotenv.config();
 const app = express();
@@ -28,6 +32,28 @@ app.use((req, res, next) => {
   logger.info(`Request body, ${req.body}`);
   next();
 });
+
+// Swagger Documentation Route
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
+  customCss: '.swagger-ui .topbar { display: none }',
+  customSiteTitle: "Task Management API Documentation",
+  swaggerOptions: {
+    persistAuthorization: true,
+    displayRequestDuration: true,
+    docExpansion: 'none',
+    filter: true,
+    showExtensions: true,
+    showCommonExtensions: true,
+    tryItOutEnabled: true
+  }
+}));
+
+// Swagger JSON endpoint
+app.get('/api-docs.json', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(swaggerSpec);
+});
+
 app.use("/api/auth",authRoutes);
 app.use("/api/tasks",taskRoutes);
 
