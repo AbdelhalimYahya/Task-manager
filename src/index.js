@@ -10,16 +10,25 @@ import authRoutes from "./router/auth.route.js";
 import taskRoutes from "./router/task.route.js";
 import swaggerUi from "swagger-ui-express";
 import swaggerSpec from "./configuration/swagger.config.js";
+import { rateLimit } from 'express-rate-limit';
 
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 const __dirname = path.resolve();
+const limiter = rateLimit({
+	windowMs: 15 * 60 * 1000, // 15 minutes
+	limit: 100,
+	standardHeaders: 'draft-8',
+	legacyHeaders: false,
+	ipv6Subnet: 56,
+});
 
 // Middlewares
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use(helmet());
+app.use(limiter);
 app.use(cookieParser(process.env.JWT_SECRET));
 app.use(cors({
     origin: "*", // Just making the API public for now
