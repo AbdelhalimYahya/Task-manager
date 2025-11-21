@@ -604,3 +604,26 @@
 {"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-20T00:15:50.110Z"}
 {"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-20T00:15:52.639Z"}
 {"level":"info","message":"API Gateway is running on port 5000","service":"api-gateway","timestamp":"2025-11-20T00:15:58.650Z"}
+{"level":"info","message":"Received POST request to /api/auth/logout","service":"api-gateway","timestamp":"2025-11-20T00:17:13.817Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-20T00:17:13.818Z"}
+{"ip":"::1","level":"info","message":"User logout initiated","service":"api-gateway","timestamp":"2025-11-20T00:17:13.820Z"}
+{"level":"info","message":"User logged out successfully","service":"api-gateway","timestamp":"2025-11-20T00:17:13.821Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"api-gateway","timestamp":"2025-11-20T00:17:18.357Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-20T00:17:18.357Z"}
+{"email":"ali@gmail.com","ip":"::1","level":"info","message":"Login attempt initiated","service":"api-gateway","timestamp":"2025-11-20T00:17:18.359Z","userAgent":"PostmanRuntime/7.49.1"}
+{"email":"ali@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"api-gateway","timestamp":"2025-11-20T00:17:18.640Z","userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received POST request to /api/auth/signup","service":"api-gateway","timestamp":"2025-11-20T00:17:25.175Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-20T00:17:25.175Z"}
+{"email":"abdelhalim@gmail.com","ip":"::1","level":"info","message":"Signup attempt initiated","name":"abdelhalim","service":"api-gateway","timestamp":"2025-11-20T00:17:25.176Z","userAgent":"PostmanRuntime/7.49.1"}
+{"email":"abdelhalim@gmail.com","level":"warn","message":"Signup failed: Email already exists","service":"api-gateway","timestamp":"2025-11-20T00:17:25.412Z","userId":"691cdbb3067695dd7c4585be"}
+{"level":"info","message":"Received GET request to /api/tasks/dashboard","service":"api-gateway","timestamp":"2025-11-20T00:17:29.739Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-11-20T00:17:29.740Z"}
+{"level":"info","message":"Received GET request to /api/tasks/691bd383c2dbd92d33ba86db","service":"api-gateway","timestamp":"2025-11-20T00:17:33.915Z"}
+{"level":"info","message":"Request body, undefined","service":"api-gateway","timestamp":"2025-11-20T00:17:33.916Z"}
+{"currentUserId":"691bd383c2dbd92d33ba86db","filters":{"search":null,"status":null},"level":"info","limit":10,"message":"Tasks retrieved for user with pagination","page":1,"service":"api-gateway","taskCount":2,"timestamp":"2025-11-20T00:17:34.968Z","total":2,"userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received POST request to /api/tasks/create","service":"api-gateway","timestamp":"2025-11-20T00:17:49.392Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-20T00:17:49.394Z"}
+{"level":"info","message":"Task created successfully","service":"api-gateway","task":{"__v":0,"_id":"691e5e2d9e8cd9449fb40e4a","createdAt":"2025-11-20T00:17:49.641Z","description":"descri oyment","dueDate":"2025-03-14T22:00:00.000Z","id":"691e5e2d9e8cd9449fb40e4a","status":"pending","title":"titasfdasdfasdfasdfasf","user":{"_id":"691bd383c2dbd92d33ba86db","email":"ali@gmail.com","role":"user"}},"taskId":"691e5e2d9e8cd9449fb40e4a","taskTitle":"titasfdasdfasdfasdfasf","timestamp":"2025-11-20T00:17:50.173Z","user":{"__v":0,"_id":"691bd383c2dbd92d33ba86db","createdAt":"2025-11-18T02:01:39.420Z","email":"ali@gmail.com","name":"ali","role":"user"},"userId":"691bd383c2dbd92d33ba86db"}
+{"level":"info","message":"Received PATCH request to /api/tasks/691ce3b25a3c3202c638e004","service":"api-gateway","timestamp":"2025-11-20T00:17:58.963Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-11-20T00:17:58.964Z"}
+{"level":"info","message":"Task updated successfully","service":"api-gateway","taskId":"691ce3b25a3c3202c638e004","timestamp":"2025-11-20T00:17:59.628Z","updatedFields":{"title":"update title only dueto patch then the shema joi"},"userId":"691bd383c2dbd92d33ba86db"}
